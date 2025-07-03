@@ -1,13 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { UsersComponent } from './users/users.component';
+import DUMMYUSER from '../DummyData/dummyData.json';
+import { TasksComponent } from "./tasks/tasks.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [UsersComponent, TasksComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corrected property name
 })
 export class AppComponent {
-  title = 'clean-app';
+  users = DUMMYUSER;
+
+  seletedUserId: string = '';
+  get selectedUser() { 
+     return this.users.find((user) => user.id === this.seletedUserId);
+  }
+  
+  onSelectUser(id:string) {
+    this.seletedUserId = id;
+  }
 }

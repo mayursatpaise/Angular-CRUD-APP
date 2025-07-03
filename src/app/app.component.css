@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;      /* horizontal layout */
+  align-items: flex-start;  /* align items to the top */
+  gap: 32px;                /* space between users and tasks */
+  padding: 16px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100vh;            /* full viewport height */
+}
+#users {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 220px;             /* fixed width for users list */
+  align-items: center;
+  max-height: 100vh;        /* take full height of viewport */
+  height: 100vh;            /* ensure full height */
+  overflow-y: auto;         /* vertical scroll */
+  background: #f9f9f9;      /* optional: visual separation */
+  border-radius: 8px;       /* optional */
+}
+
+li {
+  flex: none;
+  width: 100%;
+  max-width: 220px;
+}
+
+app-tasks {
+  flex: 1;                  /* take remaining space */
+  min-width: 0;             /* allow shrinking */
+}

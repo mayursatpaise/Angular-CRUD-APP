@@ -1,0 +1,8 @@
+<article class="task-card">
+    <h2>{{ task.title }}</h2>
+    <time>{{ task.duedate | date:"short"}}</time>
+    <p>{{ task.summary }}</p>
+    <p class="actions">
+        <button (click)="oncompleteTask()">Complete</button>
+    </p>
+</article>

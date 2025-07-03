@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "name": "Amit Verma",
+    "address": {
+      "street": "12 MG Road",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400001",
+      "country": "India"
+    },
+    "jobProfile": "UI Developer",
+    "image": "https://randomuser.me/api/portraits/men/21.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Sneha Patil",
+    "address": {
+      "street": "88 Lotus Avenue",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411038",
+      "country": "India"
+    },
+    "jobProfile": "Backend Developer",
+    "image": "https://randomuser.me/api/portraits/women/65.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Rajeev Reddy",
+    "address": {
+      "street": "14 HSR Layout",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560102",
+      "country": "India"
+    },
+    "jobProfile": "DevOps Engineer",
+    "image": "https://randomuser.me/api/portraits/men/34.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Neha Sharma",
+    "address": {
+      "street": "24 Gandhi Marg",
+      "city": "Delhi",
+      "state": "Delhi",
+      "pincode": "110001",
+      "country": "India"
+    },
+    "jobProfile": "QA Analyst",
+    "image": "https://randomuser.me/api/portraits/women/50.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Mohit Singh",
+    "address": {
+      "street": "7 Civil Lines",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "pincode": "226001",
+      "country": "India"
+    },
+    "jobProfile": "Full Stack Developer",
+    "image": "https://randomuser.me/api/portraits/men/45.jpg"
+  }
+]

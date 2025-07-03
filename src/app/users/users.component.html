@@ -1,0 +1,12 @@
+<app-card>
+  @for(item of user; track item.id){
+  <div class="card user-card" >
+    <button [class.active]="selected" class="card-button" (click)="onSelectUser(item.id)">
+      <img [src]="item.image" [alt]="item.name" class="card-img" />
+      <div class="card-content">  
+        <h2 class="card-title">{{ item.name }}</h2>
+      </div>
+    </button>
+  </div>
+}
+</app-card>
