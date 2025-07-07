@@ -1,4 +1,4 @@
-<app-card>
+
   @for(item of user; track item.id){
   <div class="card user-card" >
     <button [class.active]="selected" class="card-button" (click)="onSelectUser(item.id)">
@@ -9,4 +9,4 @@
     </button>
   </div>
 }
-</app-card>
+

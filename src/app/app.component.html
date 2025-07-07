@@ -1,15 +1,18 @@
 <div class="container">
-  <ul id="users">
-    @for (user of users; track user.id) {
+  <app-header class="header-app" />
+  <div class="user-tasks">
+    <ul id="users">
+      @for (user of users; track user.id) {
       <li style="list-style: none;">
         <app-users [user]="[user]" [selected]="user.id === seletedUserId" (select)="onSelectUser($event)"></app-users>
       </li>
-    }
-  </ul>
+      }
+    </ul>
 
-  @if (selectedUser) {
-    <app-tasks [userId]="selectedUser.id" [name]="selectedUser.name"></app-tasks>
-  } @else {
+    @if (selectedUser) {
+    <app-tasks id="app-tasks" [userId]="selectedUser.id" [name]="selectedUser.name"></app-tasks>
+    } @else {
     <p id="fallback" class="text-center">Please select a user to see their tasks.</p>
-  }
+    }
+  </div>
 </div>
